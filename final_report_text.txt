@@ -1,0 +1,22 @@
+
+Analysis of Trader Performance Based on Bitcoin Market Sentiment
+
+Introduction:
+This project analyzes the relationship between Bitcoin market sentiment and trader performance using Bitcoin Fear & Greed sentiment data and historical trader data from Hyperliquid.
+
+Dataset Description:
+The sentiment dataset contains date and classification columns. The trader dataset contains account, symbol, execution price, size, side, time, closed PnL, leverage, and other trading details.
+
+Methodology:
+Both datasets were loaded in Google Colab. Column names were cleaned and date columns were converted into a common format. The datasets were merged using the date column. Zero PnL trades were removed for performance-based analysis. The final analysis was performed using total PnL, average PnL, win rate, trade side, symbol-wise performance, account-wise performance, leverage usage, and daily PnL trend.
+
+Key Findings:
+1. Highest average PnL was observed during Greed sentiment.
+2. Highest total PnL was observed during Fear sentiment.
+3. Highest win rate was observed during Fear sentiment.
+4. Trader performance changes across different market sentiment conditions.
+5. Leverage and trade side affect profitability and risk.
+6. Some symbols and accounts performed better than others.
+
+Conclusion:
+The analysis shows that Bitcoin market sentiment has an impact on trader performance. Trader profitability, win rate, leverage usage, and trading side behavior vary across different sentiment conditions. These insights can help traders improve decision-making, manage risk, and develop smarter trading strategies.
